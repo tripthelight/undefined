@@ -1,3 +1,5 @@
+import HEADER from "../../components/header.js";
+
 /** ===================================================
  * FUNCTIONS
  */
@@ -7,7 +9,7 @@
  */
 // DOCUMENT READY COMMON
 const comnInit = () => {
-  console.log("111");
+  HEADER();
 };
 const readyComn = () => {
   if (document.readyState === "complete") comnInit();

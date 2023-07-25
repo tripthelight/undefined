@@ -1,8 +1,2 @@
-@import url("./common.scss");
-
-.link-list {
-  a {
-    background-color: violet;
-    color: #fff;
-  }
-}
+@use "./common";
+@use "./components/header";

@@ -75,6 +75,7 @@ const multipleHtmlPlugins = RETURN_OBJ(PAGES.html).map((name) => {
     chunks: CHUNKS(name),
     inject: "body",
     minify: false,
+    scriptLoading: "", // defer | async | null
   });
 });
 

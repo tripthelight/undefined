@@ -14,3 +14,7 @@
 - npm i -D dotenv
 - npm i -D express
 - npm i -D nodemon
+
+### 유의사항
+
+- webpack에서 scss를 css로 compile 할 경우, scss 파일에서 @import 대신 @use를 사용할 것
