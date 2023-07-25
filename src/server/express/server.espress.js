@@ -20,6 +20,7 @@ const ROUTE_PATH = "../../../dist/views";
  * MIDDLEWARE
  */
 APP.use(express.static(path.join(__dirname, "dist")));
+APP.use("/static", express.static("dist/assets"));
 APP.use(express.json());
 APP.use(express.urlencoded({ extended: true }));
 

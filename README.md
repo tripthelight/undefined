@@ -18,3 +18,7 @@
 ### 유의사항
 
 - webpack에서 scss를 css로 compile 할 경우, scss 파일에서 @import 대신 @use를 사용할 것
+
+### 할일
+
+- font-face, css, js, image 는 static 경로에 넣을 것

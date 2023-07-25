@@ -1,0 +1,78 @@
+.timeline {
+  position: relative;
+  .list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .year {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 4px 0;
+        font-size: 48px;
+      }
+      .month {
+        width: 100%;
+        h3 {
+          text-align: center;
+          background-color: rgba(255, 255, 255, 1);
+          padding: 12px 0;
+          font-size: 38px;
+        }
+        .day {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          li {
+            position: relative;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .box {
+              display: flex;
+              flex-direction: column;
+            }
+            .line {
+              flex-grow: 1;
+              min-width: 30px;
+              display: flex;
+              height: 1px;
+              background-color: rgba(0, 0, 0, 1);
+            }
+            &:nth-child(odd) {
+              align-self: flex-start;
+              .box {
+                align-items: flex-end;
+              }
+            }
+            &:nth-child(even) {
+              flex-direction: row-reverse;
+              align-self: flex-end;
+              .box {
+                align-items: flex-start;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .center-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+  }
+}

@@ -1,3 +1,6 @@
+// @import url("./font.scss");
+// @use "./font.scss";
+
 /** =======================================
   * reset
 */
@@ -5,6 +8,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: "NanumBarunGothic", "Malgun Gothic", "dotum", sans-serif;
 }
 html,
 body {
@@ -28,6 +32,22 @@ button {
   background-color: transparent;
   border: 0 none;
   border-radius: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+
+/** =======================================
+  * common style
+*/
+.alt-txt {
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
 }
 
 /** =======================================

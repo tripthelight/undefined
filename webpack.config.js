@@ -9,6 +9,7 @@ import TerserPlugin from "terser-webpack-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 import webpackDevServer from "webpack-dev-server";
 import webpack from "webpack";
+import CopyPlugin from "copy-webpack-plugin";
 
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
@@ -69,6 +70,19 @@ const CONFIG = {
             loader: "sass-loader",
             options: {
               sourceMap: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[folder]/[name].[ext]",
+              outputPath: "assets/font/",
+              publicPath: "/assets/font/",
             },
           },
         ],

@@ -2,7 +2,7 @@ import "../scss/components/header.scss";
 
 export default () => {
   const HEADER_LOGO = `
-    <h1><a href="#" title="홈으로 이동">UNDEFIEND</a></h1>
+    <h1><a href="#" title="홈으로 이동">UNDEFINED</a></h1>
   `;
   const HEADER_UL = `
     <ul>
