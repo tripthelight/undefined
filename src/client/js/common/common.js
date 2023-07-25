@@ -1,4 +1,5 @@
 import HEADER from "../../components/header.js";
+import FOOTER from "../../components/footer.js";
 
 /** ===================================================
  * FUNCTIONS
@@ -10,6 +11,7 @@ import HEADER from "../../components/header.js";
 // DOCUMENT READY COMMON
 const comnInit = () => {
   HEADER();
+  FOOTER();
 };
 const readyComn = () => {
   if (document.readyState === "complete") comnInit();
