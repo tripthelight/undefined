@@ -1,5 +1,7 @@
 .timeline {
   position: relative;
+  padding: 0 60px 30px;
+  box-sizing: border-box;
   .list {
     position: relative;
     display: flex;
@@ -40,6 +42,10 @@
             .box {
               display: flex;
               flex-direction: column;
+              p {
+                margin-top: 4px;
+                word-break: keep-all;
+              }
             }
             .line {
               flex-grow: 1;
@@ -52,6 +58,9 @@
               align-self: flex-start;
               .box {
                 align-items: flex-end;
+                p {
+                  text-align: right;
+                }
               }
             }
             &:nth-child(even) {
@@ -62,6 +71,11 @@
               }
             }
           }
+        }
+      }
+      & + .year {
+        h2 {
+          padding-top: 40px;
         }
       }
     }
